@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainPageByAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="2" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="add" />
+
+    <Button
+        android:id="@+id/ButtonReset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Reset" />
+
+    <ListView
+        android:id="@+id/listData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnListPatientDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Patient Data" />
+
+        <Button
+            android:id="@+id/btnListDoctorData"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Doctor Data" />
+
+        <ImageButton
+            android:id="@+id/ButtonUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.3"
+            android:background="#00000000"
+            android:src="@drawable/icons8_user_menu_male_50" />
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:src="@drawable/icons8_exit_50" />
+    </LinearLayout>
+</LinearLayout>
